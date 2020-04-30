@@ -1,0 +1,4 @@
+rootProject.name = 'nana'
+
+include 'nana-core'
+include 'nana-server'

@@ -1,0 +1,27 @@
+ext.ver = [
+        "spring": "2.2.0.RELEASE",
+        "lombok": "1.18.8",
+        "mybatis": "1.3.2",
+        "groovy": "2.5.8",
+        "postgresql": "42.2.5",
+        "mybatisplus": "1.3.2",
+        "guava": "28.0-jre",
+]
+
+ext.lib = [
+        // spring
+        "spring_boot_starter_web"            : "org.springframework.boot:spring-boot-starter-web:${ver.spring}",
+        "spring_boot_starter_test"           : "org.springframework.boot:spring-boot-starter-test:${ver.spring}",
+        "spring_boot_gradle_plugin"          : "org.springframework.boot:spring-boot-gradle-plugin:${ver.spring}",
+        "spring_boot_starter_undertow"       : "org.springframework.boot:spring-boot-starter-undertow:${ver.spring}",
+        "spring_boot_dependencies"           : "org.springframework.boot:spring-boot-dependencies:${ver.spring}",
+        // groovy
+        "groovy_all"                         : "org.codehaus.groovy:groovy-all:${ver.groovy}",
+        // db
+        "mybatis_spring_boot_starter"        : "org.mybatis.spring.boot:mybatis-spring-boot-starter:${ver.mybatis}",
+        "mybatis_plus_boot_starter"          : "com.baomidou:mybatis-plus-boot-starter:${ver.mybatisplus}",
+        "postgresql"                         : "org.postgresql:postgresql:${ver.postgresql}",
+        // utils
+        "guava"                              : "com.google.guava:guava:${ver.guava}",
+        "lombok"                             : "org.projectlombok:lombok:${ver.lombok}",
+]

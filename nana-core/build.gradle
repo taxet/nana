@@ -1,0 +1,22 @@
+apply plugin: 'org.springframework.boot'
+
+configurations.all {
+    exclude module: 'spring-boot-starter-tomcat'
+}
+
+dependencies {
+    compileOnly lib.lombok
+    annotationProcessor lib.lombok
+    api lib.spring_boot_starter_web
+    testImplementation lib.spring_boot_starter_test
+    runtimeOnly lib.postgresql
+    runtimeOnly lib.groovy_all
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}

@@ -1,0 +1,18 @@
+apply plugin: 'war'
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    implementation project(':nana-core')
+    implementation lib.spring_boot_starter_undertow
+    compileOnly lib.lombok
+    annotationProcessor lib.lombok
+}
+
+bootRun {
+    main = 'moe.sayuri.nana.rest.Application'
+}
+
+bootWar {
+    enabled = true
+    mainClassName = 'moe.sayuri.nana.rest.Application'
+}
